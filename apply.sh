@@ -16,6 +16,9 @@ popd
 # Restart polybar
 polybar-msg cmd restart
 
+# Restart qtile
+qtile-cmd -o cmd -f restart
+
 # Regen termite's config.
 pushd ~/.config/termite
 ./generate.py > config
