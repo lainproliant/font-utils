@@ -24,5 +24,10 @@ pushd ~/.config/termite
 ./generate.py > config
 popd
 
+# Regen alacritty's config.
+pushd ~/.config/alacritty
+./generate.py > alacritty.yml
+popd
+
 # Tell all termites to reload their configs.
 killall -USR1 termite
