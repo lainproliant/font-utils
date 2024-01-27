@@ -17,7 +17,7 @@ popd
 polybar-msg cmd restart
 
 # Restart qtile
-qtile-cmd -o cmd -f restart
+qtile cmd-obj -o cmd -f restart
 
 # Regen termite's config.
 pushd ~/.config/termite
@@ -26,7 +26,7 @@ popd
 
 # Regen alacritty's config.
 pushd ~/.config/alacritty
-./generate.py > alacritty.yml
+./generate.py > alacritty.toml
 popd
 
 # Tell all termites to reload their configs.
